@@ -1,4 +1,5 @@
-import Button from '../components/Button/Button'
+import { Plus, Minus } from 'lucide-react'
+import { Button } from '@/components/ui/button'
 
 type CounterProps = {
   value: number
@@ -10,9 +11,13 @@ const Counter = ({ value, onIncrement, onDecrement }: CounterProps) => {
   return (
     <div>
       <p>Current Value: {value}</p>
-      <div className="flex flex-row items-center gap-4">
-        <Button onClick={onDecrement}>-</Button>
-        <Button onClick={onIncrement}>+</Button>
+      <div className="flex flex-wrap items-center gap-2 md:flex-row my-4">
+        <Button variant="outline" size="icon" aria-label="Decrease" onClick={onDecrement}>
+          <Minus />
+        </Button>
+        <Button variant="outline" size="icon" aria-label="Increase" onClick={onIncrement}>
+          <Plus />
+        </Button>
       </div>
     </div>
   )

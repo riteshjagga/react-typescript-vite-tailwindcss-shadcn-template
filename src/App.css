@@ -1,0 +1,12 @@
+@layer theme, base, components, utilities;
+
+/**
+ * The import `@import 'tailwindcss';` is a shorthand to 
+ * import all the below mentioned css from the bundled tailwindcss/index.css file
+ * It was commented so that we can write individual imports and easily remove the preflight if required
+ */
+/* @import 'tailwindcss'; */
+@import 'tailwindcss/theme.css' layer(theme);
+/* @import 'tailwindcss/preflight.css' layer(base); */
+@import 'tailwindcss/utilities.css' layer(utilities);
+@import './index.css';

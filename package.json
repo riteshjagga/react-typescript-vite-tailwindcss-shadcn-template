@@ -1,5 +1,5 @@
 {
-  "name": "react-typescript-vite-template",
+  "name": "react-typescript-vite-tailwindcss-shadcn-template",
   "version": "1.0.0",
   "description": "A frontend template project which uses React, TypeScript, Vite, TailwindCSS, Jest, and RTL",
   "main": "app.js",

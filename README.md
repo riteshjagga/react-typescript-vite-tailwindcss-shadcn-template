@@ -1,5 +1,5 @@
-# React Typescript Vite TailwindCSS Template
+# React + TypeScript + Vite TailwindCSS + ShandCN Template
 
 ## About
 
-This template used React, Typescript, Vite, and TailwindCSS
+This template uses React, TypeScript, Vite, TailwindCSS, and ShadCN Template

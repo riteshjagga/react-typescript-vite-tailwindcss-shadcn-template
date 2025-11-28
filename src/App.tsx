@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import Counter from './Counter/Counter'
 import './App.css'
+import { CheckboxDemo } from './CheckboxDemo/CheckboxDemo'
+import { AccordionDemo } from './AccordionDemo/AccordionDemo'
 
 const App = (): React.ReactElement => {
   const [count, setCount] = useState<number>(0)
@@ -15,8 +17,10 @@ const App = (): React.ReactElement => {
 
   return (
     <>
-      <h1>React + TypeScript + Vite + TailwindCSS Template</h1>
+      <h1>React + TypeScript + Vite + TailwindCSS + ShadCN Template</h1>
       <Counter value={count} onDecrement={handleDecrement} onIncrement={handleIncrement} />
+      <CheckboxDemo />
+      <AccordionDemo />
     </>
   )
 }
